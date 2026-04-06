@@ -3,10 +3,10 @@ on: push
 jobs:
   build:
     outputs:
-      version: ${{ steps.steps1.outputs.version}}
+      version: ${{ steps.step1.outputs.version}}
     runs-on: ubuntu-latest
     steps:
-      - name: Build ste[
+      - name: Build step
         id: step1
         run: echo "version=0.0.1" >> $GITHUB_OUTPUT
     
