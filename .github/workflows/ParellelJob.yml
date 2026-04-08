@@ -1,0 +1,24 @@
+name: Parallel Jobs
+
+on: 
+  workflow_dispatch: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "Build"
+
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: echo "Test"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy App
+        run: echo "Deploy"
+        
+ 
